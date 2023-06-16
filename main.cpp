@@ -33,6 +33,13 @@ MainWindow :: MainWindow(){
     pauseButton = new QPushButton("Pause", this);
     pauseButton->setGeometry(200, 50, 70, 50);
     pauseButton->setFont(fontButton);
+
+    connect(startButton, &QPushButton::clicked,
+            this, &MainWindow::startButtonClick);
+    connect(stopButton, &QPushButton::clicked,
+            this, &MainWindow::stopButtonClick);
+    connect(pauseButton, &QPushButton::clicked,
+            this, &MainWindow::pauseButtonClick);
 }
 
 void MainWindow::startButtonClick(){
