@@ -3,6 +3,10 @@ class MainWindow : public QMainWindow {
 	public:
 		MainWindow();	
     private:
+        QLabel      *textLabel;
+        QPushButton *startButton;
+        QPushButton *stopButton;
+        QPushButton *pauseButton;
 };
 
 MainWindow :: MainWindow(){
