@@ -2,11 +2,12 @@
 class MainWindow : public QMainWindow {
 	public:
 		MainWindow();	
-	private:
+    private:
 };
 
 MainWindow :: MainWindow(){
-
+    setFixedSize(600,200);
+    setWindowTitle("Test QPushButton v8_1");
 }
 
 int main(int argc, char *argv[]){
