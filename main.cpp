@@ -14,6 +14,10 @@ MainWindow :: MainWindow(){
     setWindowTitle("Test QPushButton v8_1");
     QFont fontLabel("Courier", 18, QFont::Normal);
     QFont fontButton("Times", 18, QFont::Bold);
+
+    textLabel = new QLabel("Test QLabel", this);
+    textLabel->setGeometry(0, 0, 300, 50);
+    textLabel->setFont(fontLabel);
 }
 
 int main(int argc, char *argv[]){
