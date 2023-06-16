@@ -2,6 +2,9 @@
 class MainWindow : public QMainWindow {
 	public:
 		MainWindow();	
+        void startButtonClick();
+        void stopButtonClick();
+        void pauseButtonClick();
     private:
         QLabel      *textLabel;
         QPushButton *startButton;
