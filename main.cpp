@@ -18,6 +18,18 @@ MainWindow :: MainWindow(){
     textLabel = new QLabel("Test QLabel", this);
     textLabel->setGeometry(0, 0, 300, 50);
     textLabel->setFont(fontLabel);
+
+    startButton = new QPushButton("Start", this);
+    startButton->setGeometry(20, 50, 70, 50);
+    startButton->setFont(fontButton);
+
+    stopButton = new QPushButton("Stop", this);
+    stopButton->setGeometry(110, 50, 70, 50);
+    stopButton->setFont(fontButton);
+
+    pauseButton = new QPushButton("Pause", this);
+    pauseButton->setGeometry(200, 50, 70, 50);
+    pauseButton->setFont(fontButton);
 }
 
 int main(int argc, char *argv[]){
