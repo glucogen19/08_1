@@ -12,6 +12,8 @@ class MainWindow : public QMainWindow {
 MainWindow :: MainWindow(){
     setFixedSize(600,200);
     setWindowTitle("Test QPushButton v8_1");
+    QFont fontLabel("Courier", 18, QFont::Normal);
+    QFont fontButton("Times", 18, QFont::Bold);
 }
 
 int main(int argc, char *argv[]){
