@@ -35,6 +35,18 @@ MainWindow :: MainWindow(){
     pauseButton->setFont(fontButton);
 }
 
+void MainWindow::startButtonClick(){
+    textLabel->setText("Clicked: Start");
+}
+
+void MainWindow::stopButtonClick(){
+    textLabel->setText("Clicked: Stop");
+}
+
+void MainWindow::pauseButtonClick(){
+    textLabel->setText("Clicked: Pause");
+}
+
 int main(int argc, char *argv[]){
 	QApplication app(argc, argv);
 	MainWindow mainWin;
